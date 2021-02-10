@@ -150,10 +150,7 @@ if ($yaml)
 else if (array_key_exists("user_profile", $_SESSION))
 {
     $profile = $_SESSION["user_profile"];
-}
 
-if (isset($profile))
-{
     if (isset($FORM_T["delete"]))
     {
         $profile->delete($FORM_T["delete"]);
